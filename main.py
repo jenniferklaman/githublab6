@@ -1,23 +1,15 @@
+def encoder(encode):
+    encode_list = []
+    encode_list[:0] = encode
+    encoded_list = [int(n) + 3 for n in encode_list]
+    encoded_str = ""
+    for i in encoded_list:
+        encoded_str += str(i)
+    return encoded_str
 
-def decode(password):
-    password_lst = []
-    decoded_password = ""
+def decoder(encoded_str,encode):
+    print(f"The encoded password is {encoded_str}, and the original password is {encode}.\n")
 
-    try:
-
-        for i in password:
-            password_lst.append(i)
-
-        for digit in password_lst:
-            digit = int(digit)
-            digit -= 3
-            digit = str(digit)
-            decoded_password += digit
-
-        return decoded_password
-
-    except TypeError as exc:
-        print(exc)
 def main():
     main()
 
