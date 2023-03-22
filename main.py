@@ -1,3 +1,4 @@
+
 def decode(password):
     password_lst = []
     decoded_password = ""
@@ -17,7 +18,6 @@ def decode(password):
 
     except TypeError as exc:
         print(exc)
-
 def main():
     main()
 
